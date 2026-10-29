@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michelle Lahung Kerdua">
+    <meta name="description" content="Personal portfolio of Michelle Lahung Kerdua, a third-year Network Computing student at UNIMAS.">
+    <meta name="theme-color" content="#f7c9d8">
+
+    <title>Michelle Lahung Kerdua | All About Me</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- Header and Navigation -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open menu"
+                aria-controls="navLinks"
+                aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                type="button"
+                aria-label="Switch to dark theme"
+                aria-pressed="false">
+                <span class="theme-icon" aria-hidden="true">🌙</span>
+                <span class="theme-text">Dark</span>
+            </button>
+
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- Home Section -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+
+            <div class="hero-text">
+                <p class="greeting" id="greeting">Hello, welcome!</p>
+
+                <h1 id="hero-title">All About Me</h1>
+
+                <p class="hero-name">Michelle Lahung Kerdua</p>
+
+                <p class="typing-line">
+                    I am a
+                    <span class="typing" id="typingText">
+                        Network Computing student
+                    </span>
+                    <span class="cursor" aria-hidden="true">|</span>
+                </p>
+
+                <p class="hero-intro">
+                    A third-year student at UNIMAS who is still a
+                    <span class="highlight">newbie</span>,
+                    but eager to learn something new every day.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#about">
+                        Get to know me
+                    </a>
+
+                    <span class="action-separator" aria-hidden="true">|</span>
+
+                    <a class="btn btn-outline" href="#contact">
+                        Contact me
+                    </a>
+                </div>
+            </div>
+
+            <figure class="hero-photo">
+                <img
+                    src="images/profile.jpg"
+                    alt="Portrait of Michelle Lahung Kerdua smiling, with long dark hair and wearing a black blazer over a white top"
+                    width="698"
+                    height="1000">
+
+                <figcaption>
+                    Michelle Lahung Kerdua, Network Computing, UNIMAS
+                </figcaption>
+            </figure>
+
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section reveal" id="about" aria-labelledby="about-title">
+
+            <h2 id="about-title">About Me</h2>
+
+            <div class="about-grid">
+
+                <!-- Introduction -->
+                <article class="card">
+                    <h3>Who I am</h3>
+
+                    <p class="about-intro">
+                        I'm Michelle Lahung Kerdua, matric no. 104956,
+                        and a third-year student currently studying
+                        Network Computing.
+                    </p>
+                </article>
+
+                <!-- Hobbies -->
+                <article class="card">
+                    <h3>Hobbies</h3>
+
+                    <ul class="tag-list">
+                        <li>Playing video games</li>
+                        <li>Hiking</li>
+                        <li>Watching podcasts on YouTube</li>
+                    </ul>
+                </article>
+
+                <!-- Education -->
+                <article class="card card-wide">
+                    <h3>Education</h3>
+
+                    <p class="education-summary">
+                        Bachelor of Network Computing with Honour, Universiti Malaysia Sarawak (UNIMAS)
+                        <span></span>
+                    </p>
+                </article>
+
+                <!-- Achievements -->
+                <article class="card card-wide">
+                    <h3>Achievements</h3>
+
+                    <ul class="plain-list">
+                        <li>
+                            <strong class="strong">
+                                Sports and Recreation Exco
+                            </strong>
+                            <br>
+                            Kolej Sakura, Session 2025/2026
+                        </li>
+
+                        <li>
+                            <strong class="strong">
+                                Vice President
+                            </strong>
+                            <br>
+                            Sakura Batik Sports Challenge sub-event
+                        </li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section
+            class="section reveal"
+            id="experience"
+            aria-labelledby="experience-title">
+
+            <h2 id="experience-title">Experience</h2>
+
+            <p class="section-note">
+                Part-time jobs I have done, newest first.
+            </p>
+
+            <div class="table-wrap">
+                <table
+                    class="info-table"
+                    id="experienceTable"
+                    aria-label="Part-time jobs and dates">
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Job Position</th>
+                            <th scope="col">Employment Type</th>
+                            <th scope="col">Period</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Admin Clerk</th>
+                            <td>Part-time</td>
+                            <td>June 2024 – August 2024</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Part-Time Promoter</th>
+                            <td>Part-time</td>
+                            <td>May 2024 – June 2024</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Cashier</th>
+                            <td>Part-time</td>
+                            <td>April 2022 – June 2022</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section reveal" id="skills" aria-labelledby="skills-title">
+
+            <h2 id="skills-title">Skills</h2>
+
+            <ul class="skills-list">
+                <li class="skill">
+                    <div class="skill-head">
+                        <span>Teamwork</span>
+                    </div>
+                </li>
+
+                <li class="skill">
+                    <div class="skill-head">
+                        <span>Problem Solving</span>
+                    </div>
+                </li>
+
+                <li class="skill">
+                    <div class="skill-head">
+                        <span>Soft Skills</span>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section reveal" id="contact" aria-labelledby="contact-title">
+
+            <h2 id="contact-title">Contact</h2>
+
+            <div class="contact-grid">
+
+                <!-- Contact Details -->
+                <div class="card">
+                    <h3>Get in touch</h3>
+
+                    <ul class="plain-list">
+                        <li>
+                            <strong class="strong">Email</strong>
+                            <br>
+                            <a href="mailto:104956@siswa.unimas.my?subject=Hello%20Michelle">
+                                104956@siswa.unimas.my
+                            </a>
+                        </li>
+
+                        <li>
+                            <strong class="strong">Phone</strong>
+                            <br>
+                            <a href="tel:+60137472808">
+                                013-747 2808
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Form -->
+                <form
+                    class="card contact-form"
+                    id="contactForm"
+                    action="#"
+                    method="post"
+                    novalidate>
+
+                    <h3>Send a message</h3>
+
+                    <div class="field">
+                        <label for="name">Your name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="name"
+                            required
+                            aria-describedby="nameError">
+
+                        <p class="error" id="nameError" role="alert"></p>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Your email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                            aria-describedby="emailError">
+
+                        <p class="error" id="emailError" role="alert"></p>
+                    </div>
+
+                    <div class="field">
+                        <label for="subject">Subject</label>
+
+                        <select id="subject" name="subject">
+                            <option value="general">Just saying hi</option>
+                            <option value="collaboration">
+                                Group work or collaboration
+                            </option>
+                            <option value="opportunity">
+                                Job or internship opportunity
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            maxlength="500"
+                            required
+                            aria-describedby="messageError messageCount"></textarea>
+
+                        <p class="char-count" id="messageCount">0 / 500</p>
+                        <p class="error" id="messageError" role="alert"></p>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">
+                        Send message
+                    </button>
+
+                    <p
+                        class="form-status"
+                        id="formStatus"
+                        role="status"
+                        aria-live="polite"></p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>
+            &copy;
+            <span id="year">2026</span>
+            Michelle Lahung Kerdua. All rights reserved.
+        </p>
+
+        <p class="clock" id="liveClock" aria-hidden="true"></p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+        class="back-to-top"
+        id="backToTop"
+        type="button"
+        aria-label="Back to top"
+        hidden>
+        &uarr;
+    </button>
+
+</body>
+</html>
+
+

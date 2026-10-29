@@ -1,0 +1,615 @@
+/*
+    Name: Michelle Lahung Kerdua
+    Project: Personal Portfolio Website
+    File: style.css
+    Purpose: Styles for the personal portfolio webpage
+*/
+
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #fff8fb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #a74670;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Navigation bar */
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e8cbd8;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #333333;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #a74670;
+}
+
+.menu-toggle {
+    display: none;
+    padding: 8px;
+    background-color: #ffffff;
+    border: 1px solid #d9b8c7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 5px 0;
+    background-color: #333333;
+}
+
+.theme-toggle {
+    padding: 8px 12px;
+    background-color: #f7dce7;
+    border: 1px solid #e8cbd8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Home section */
+.hero {
+    max-width: 1100px;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.greeting {
+    display: inline-block;
+    padding: 5px 12px;
+    color: #a74670;
+    background-color: #fbeaf1;
+    border-radius: 5px;
+}
+
+.hero h1 {
+    margin: 10px 0;
+    color: #75445f;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.hero-name {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.typing-line {
+    color: #666666;
+}
+
+.typing,
+.highlight {
+    color: #a74670;
+    font-weight: bold;
+}
+
+.cursor {
+    color: #a74670;
+}
+
+.hero-intro {
+    max-width: 600px;
+    color: #555555;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid #a74670;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #a74670;
+}
+
+.btn-primary:hover {
+    background-color: #873456;
+    text-decoration: none;
+}
+
+.btn-outline {
+    color: #a74670;
+    background-color: #ffffff;
+}
+
+.btn-outline:hover {
+    background-color: #fbeaf1;
+    text-decoration: none;
+}
+
+.hero-photo {
+    width: 280px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e8cbd8;
+    border-radius: 8px;
+}
+
+.hero-photo img {
+    width: 100%;
+    max-height: 390px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 5px;
+}
+
+.hero-photo figcaption {
+    padding-top: 10px;
+    color: #666666;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Main sections */
+.section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 55px 20px;
+}
+
+.section h2 {
+    margin: 0 0 30px;
+    color: #75445f;
+    font-size: 30px;
+    text-align: center;
+}
+
+.section-note {
+    color: #666666;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* About section cards */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 22px;
+    background-color: #ffffff;
+    border: 1px solid #e8cbd8;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #75445f;
+    font-size: 21px;
+}
+
+.card-wide {
+    grid-column: 1 / -1;
+}
+
+.about-intro {
+    margin-bottom: 0;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tag-list li {
+    padding: 7px 12px;
+    background-color: #fbeaf1;
+    border: 1px solid #e8cbd8;
+    border-radius: 5px;
+}
+
+.plain-list {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.plain-list li {
+    margin-bottom: 12px;
+}
+
+.strong {
+    color: #333333;
+}
+
+/* Education information */
+.education-summary {
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+/* Experience table */
+.table-wrap {
+    overflow-x: auto;
+    background-color: #ffffff;
+    border: 1px solid #e8cbd8;
+    border-radius: 8px;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.info-table th,
+.info-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid #eadde3;
+}
+
+.info-table thead th {
+    color: #75445f;
+    background-color: #f7dce7;
+}
+
+.info-table tbody tr:last-child th,
+.info-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.info-table tbody tr:hover {
+    background-color: #fff8fb;
+}
+
+/* Skills section */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill {
+    padding: 25px 15px;
+    background-color: #ffffff;
+    border: 1px solid #e8cbd8;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.skill-head {
+    color: #75445f;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Contact section */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 14px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field label {
+    font-weight: bold;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 10px;
+    color: #333333;
+    background-color: #ffffff;
+    border: 1px solid #cdbbc4;
+    border-radius: 5px;
+}
+
+.field textarea {
+    resize: vertical;
+}
+
+.char-count {
+    margin: 0;
+    color: #666666;
+    font-size: 13px;
+    text-align: right;
+}
+
+.error {
+    margin: 0;
+    color: #b00020;
+    font-size: 13px;
+}
+
+.form-status {
+    margin: 0;
+    color: #75445f;
+}
+
+/* Footer */
+.site-footer {
+    padding: 25px 20px;
+    color: #555555;
+    background-color: #f7dce7;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+.clock {
+    font-size: 14px;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 42px;
+    height: 42px;
+    color: #ffffff;
+    background-color: #a74670;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background-color: #75445f;
+}
+
+.back-to-top[hidden] {
+    display: none;
+}
+
+/* Dark theme */
+body.dark-theme {
+    color: #eeeeee;
+    background-color: #242124;
+}
+
+body.dark-theme .site-header,
+body.dark-theme .card,
+body.dark-theme .hero-photo,
+body.dark-theme .table-wrap,
+body.dark-theme .skill {
+    background-color: #302a30;
+    border-color: #554450;
+}
+
+body.dark-theme .nav-links a,
+body.dark-theme .strong {
+    color: #eeeeee;
+}
+
+body.dark-theme .hero h1,
+body.dark-theme .section h2,
+body.dark-theme .card h3,
+body.dark-theme .skill-head {
+    color: #f0bdd2;
+}
+
+body.dark-theme .hero-intro,
+body.dark-theme .typing-line,
+body.dark-theme .hero-photo figcaption {
+    color: #dddddd;
+}
+
+body.dark-theme .info-table thead th,
+body.dark-theme .info-table tbody tr:hover,
+body.dark-theme .tag-list li {
+    background-color: #45333f;
+}
+
+body.dark-theme .field input,
+body.dark-theme .field select,
+body.dark-theme .field textarea {
+    color: #eeeeee;
+    background-color: #302a30;
+    border-color: #665260;
+}
+
+body.dark-theme .site-footer {
+    color: #eeeeee;
+    background-color: #302a30;
+}
+
+/* Responsive design for tablets and phones */
+@media (max-width: 800px) {
+    .hero {
+        gap: 25px;
+    }
+
+    .hero-photo {
+        width: 240px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 15px 20px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #e8cbd8;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 12px 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+    }
+
+    .hero-photo {
+        width: min(75%, 270px);
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-name {
+        font-size: 22px;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    .section h2 {
+        font-size: 27px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-wide {
+        grid-column: auto;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+
+    .info-table th,
+    .info-table td {
+        padding: 11px 12px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .action-separator {
+        display: none;
+    }
+}
+
+/* Reduce animation for users who prefer less movement */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
